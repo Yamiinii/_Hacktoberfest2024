@@ -23,7 +23,7 @@ function startSpeedTest() {
 function simulateDownloadSpeedTest(element, delay, loader) {
     setTimeout(() => {
         const simulatedSpeed = Math.random() * 100 / 2;
-        element.textContent = simulatedSpeed.toFixed(2);
+        element.textContent = simulatedSpeed.toFixed(2) + ' Mbps';
         document.getElementById('results').style.display = 'block';
         loader.style.display = 'none'; // Hide loader
         document.getElementById('start-btn').disabled = false;
@@ -34,7 +34,7 @@ function simulateDownloadSpeedTest(element, delay, loader) {
 function simulateUploadSpeedTest(element, delay, loader) {
     setTimeout(() => {
         const simulatedSpeed = Math.random() * 100 / 8;
-        element.textContent = simulatedSpeed.toFixed(2);
+        element.textContent = simulatedSpeed.toFixed(2) + ' Mbps';
         document.getElementById('results').style.display = 'block';
         loader.style.display = 'none'; // Hide loader
         document.getElementById('start-btn').disabled = false;
